@@ -182,7 +182,7 @@ namespace PHPaint;
     * @return PHPaint Merge of the current PHPaint object and $img
     */
     public function mergeIn(PHPaint $imgFront, $opacite) {
-        $imgFront = $imgFront->ResizeIn($this->getX(), $this->getY());
+        $imgFront = $imgFront->resizeIn($this->getX(), $this->getY());
         $x = ($this->getX() - $imgFront->getX())/2;
         $y = ($this->getY() - $imgFront->getY())/2;
         $res = $this->getStream();
@@ -200,7 +200,7 @@ namespace PHPaint;
     * @return PHPaint Merge of the current PHPaint object and $img
     */
     public function mergeMiddle(PHPaint $imgFront, $opacite, $ratio) {
-        $imgFront = $imgFront->ResizeIn($this->getX()/$ratio, $this->getY()/$ratio);
+        $imgFront = $imgFront->resizeIn($this->getX()/$ratio, $this->getY()/$ratio);
         $x = ($this->getX() - $imgFront->getX())/2;
         $y = ($this->getY() - $imgFront->getY())/2;
         $res = $this->getStream();
@@ -219,7 +219,7 @@ namespace PHPaint;
     * @return PHPaint Merge of the current PHPaint object and $img
     */
     public function mergeCorner(PHPaint $imgFront, $opacite, $ratio, $corner) {
-        $imgFront = $imgFront->ResizeIn($this->getX()/$ratio, $this->getY()/$ratio);
+        $imgFront = $imgFront->resizeIn($this->getX()/$ratio, $this->getY()/$ratio);
         $x = 0;
         $y = 0;
         switch($corner) {
