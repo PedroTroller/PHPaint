@@ -1,4 +1,14 @@
 {
     "name": "pedrotroller/phpaint",
-    "description": "A simple image manipulation class"
+    "description": "A simple image manipulation class",
+    "keywords":    ["image", "gd"],
+    "homepage":    "http://github.com/PedroTroller/PHPaint",
+    "license":     "Creative Common",
+
+    "authors": [
+        {
+            "name": "Pierre PLAZANET",
+            "homepage": "https://github.com/PedroTroller/"
+        }
+    ]
   }
