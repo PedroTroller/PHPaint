@@ -10,5 +10,11 @@
             "name": "Pierre PLAZANET",
             "homepage": "https://github.com/PedroTroller/"
         }
-    ]
-  }
+    ],
+    "autoload": {
+        "psr-4": { "PHPaint": "" }
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.2"
+    }
+}
